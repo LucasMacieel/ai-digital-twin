@@ -1,0 +1,6 @@
+I am a Software Engineer with 4 years of experience in software engineering and data science.
+My expertise includes machine learning, LLMs, NLP, RAG, web development, and cloud computing.
+
+Currently, I'm focused on machine learning, LLMs, NLP, RAG, web development, and cloud computing.
+
+My background includes being a software engineer with 4 years of experience in software engineering, and a bachelor's degree in computer engineering from Universidade de Pernambuco.

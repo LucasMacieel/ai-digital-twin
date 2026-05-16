@@ -1,0 +1,25 @@
+{
+  "full_name": "Lucas Maciel Sousa",
+  "name": "Lucas",
+  "current_role": "Software Engineer",
+  "location": "Recife, Pernambuco, Brazil",
+  "email": "lucasmacielsousa29901@gmail.com",
+  "linkedin": "linkedin.com/in/lucas-macieel",
+  "specialties": [
+    "Machine Learning",
+    "LLMs",
+    "NLP",
+    "RAG",
+    "Software Engineering",
+    "Web Development",
+    "Cloud Computing"
+  ],
+  "years_experience": 4,
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Engineering",
+      "institution": "Universidade de Pernambuco",
+      "year": "2026"
+    }
+  ]
+}

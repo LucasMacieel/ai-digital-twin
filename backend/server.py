@@ -33,7 +33,7 @@ bedrock_client = boto3.client(
 )
 
 # Bedrock model selection
-BEDROCK_MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "global.amazon.nova-2-lite-v1:0")
+BEDROCK_MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "amazon.nova-micro-v1:0")
 
 # Memory storage configuration
 USE_S3 = os.getenv("USE_S3", "false").lower() == "true"

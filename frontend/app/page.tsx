@@ -1,4 +1,4 @@
-import Twin from '@/components/twin';
+import Twin from "@/components/twin";
 
 export default function Home() {
   return (
@@ -17,7 +17,24 @@ export default function Home() {
           </div>
 
           <footer className="mt-8 text-center text-sm text-gray-500">
-            <p>GitHub: <a href="https://github.com/LucasMacieel" target="_blank" rel="noopener noreferrer">@LucasMacieel</a> | Linkedin: <a href="https://www.linkedin.com/in/lucas-macieel" target="_blank" rel="noopener noreferrer">@lucasmacieel</a></p>
+            <p>
+              GitHub:{" "}
+              <a
+                href="https://github.com/LucasMacieel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @LucasMacieel
+              </a>{" "}
+              | Linkedin:{" "}
+              <a
+                href="https://www.linkedin.com/in/lucas-macieel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @lucasmacieel
+              </a>
+            </p>
           </footer>
         </div>
       </div>

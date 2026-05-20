@@ -42,7 +42,7 @@ The application is deployed on AWS using a serverless, highly-scalable architect
 
 - **Frontend**: A highly responsive, single-page application built with **Next.js 16 (App Router)** and **Tailwind CSS v4**. It serves as an elegant chat interface featuring fluid animations, loading states, and responsive styling.
 - **Backend**: A **FastAPI** web framework running in **AWS Lambda** via **Mangum**. It features CORS middleware, session-based conversation persistence, dynamic prompt assembling, and direct integration with Amazon Bedrock.
-- **AI Model**: **Amazon Bedrock**'s latest models (e.g., `amazon.nova-micro-v1:0` or configurable alternatives), accessed through the `converse` API for low-latency, conversational intelligence.
+- **AI Model**: **Amazon Bedrock**'s latest models (e.g., `amazon.nova-lite-v1:0` or configurable alternatives), accessed through the `converse` API for low-latency, conversational intelligence.
 - **Memory Storage**: Dynamic session persistence using **AWS S3** in production (scoped to unique session IDs) and standard file storage locally, preserving up to 50 historical messages.
 - **Infrastructure as Code (IaC)**: A fully declarative **Terraform** configuration mapping the entire AWS ecosystem.
 - **CI/CD**: Fully automated deployment pipelines via **GitHub Actions** backing multi-environment workspaces (`dev`, `test`, `prod`).
@@ -114,7 +114,7 @@ Ensure you have the following installed:
 3. Configure your local environment variables in a `.env` file:
    ```ini
    DEFAULT_AWS_REGION=us-east-1
-   BEDROCK_MODEL_ID=amazon.nova-micro-v1:0
+   BEDROCK_MODEL_ID=amazon.nova-lite-v1:0
    USE_S3=false
    MEMORY_DIR=../memory
    CORS_ORIGINS=http://localhost:3000
@@ -158,7 +158,7 @@ Customize your deployments by editing `terraform/terraform.tfvars` or creating a
 | :--- | :--- | :--- |
 | `project_name` | Identifier prefixed to all resources. | `twin` |
 | `environment` | Deployment workspace (`dev`, `test`, `prod`). | `dev` |
-| `bedrock_model_id` | AWS Bedrock model identifier. | `amazon.nova-micro-v1:0` |
+| `bedrock_model_id` | AWS Bedrock model identifier. | `amazon.nova-lite-v1:0` |
 | `lambda_timeout` | Lambda function timeout in seconds. | `60` |
 | `api_throttle_burst_limit` | API Gateway throttle burst limit. | `10` |
 | `api_throttle_rate_limit` | API Gateway throttle rate limit (req/s). | `5` |
